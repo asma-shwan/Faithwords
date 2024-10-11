@@ -3,7 +3,7 @@ import { useSearchParams, useNavigate, useLocation } from "react-router-dom";
 import { GetOneSurah } from "../../Api";
 import Ayah from "../Components/Ayah";
 import PlaySound from "../Components/PlaySound";
-import GreenHeader from "../Components/greenHeader";
+import GreenHeader from "../Components/GreenHeader.jsx";
 
 export default function Surah() {
   const [loading, setLoading] = useState(true);
@@ -22,7 +22,7 @@ export default function Surah() {
   const [params] = useSearchParams();
   const SurahID = params.get("id");
   const navigate = useNavigate();
-  const location = useLocation(); // useLocation to detect route changes
+  const location = useLocation(); 
 
   const sound = useRef(new Audio());
 
