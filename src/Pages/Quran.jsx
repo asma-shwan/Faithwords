@@ -13,7 +13,7 @@ export default function Quran() {
         setLoading(false);
       })
       .catch((err) => console.log(err));
-  },[Surahs]);
+  },[]);
 
   return (
     <section className="flex flex-row flex-wrap items-center justify-center w-full h-dvh gap-4 p-[1%] mt-6 rounded-lg bg-background_color overflow-y-scroll ">
